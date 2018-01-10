@@ -1,0 +1,115 @@
+/*Стиль окна*/
+Base_Win {
+    border: 1px solid #808080;
+    border-radius: 4px;
+}
+
+Base_Dialog {
+    border: 1px solid #808080;
+    border-radius: 4px;
+}
+
+
+
+
+QPushButton#pushButton_accept, QPushButton#pushButton_cancel
+{
+    width: 80;
+    height: auto;
+    border: 1px solid #808080;
+    border-radius: 4;
+    background-color: qlineargradient(x1:0, y1:1, x2:0, y2:0,
+                                                      stop:1 #FFFFFF,
+                                                      stop:0.4 #C0C0C0);
+}
+
+QLabel{
+	font-size: 12px;
+	font-family: "Courier New";
+}
+
+/*Стиль кнопок*/
+
+Base_Win QPushButton
+{
+    width: 35px;
+    height: 35px;
+    border-radius: 3px;
+    /*border: 1px solid gray;*/
+    background-color: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:1 #FFFFFF, stop:0.4 #C0C0C0);
+    icon-size: 30px;
+}
+
+Base_Win QPushButton:checked
+{
+    background-color: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:1 gray, stop:0.5 white, stop:0.1 white, stop:0 gray);
+    border-radius: 3px;
+    /*border: 1px solid green;*/
+}
+
+Base_Win QPushButton:hover  {
+    border-radius: 3px;
+    background-color: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:1 orange, stop:0.8 white, stop:0.6 #C0C0C0, stop:0.2 white, stop:0 orange);
+    /*border: 1px solid orange;*/
+}
+
+Base_Win QPushButton:pressed {
+        border-radius: 3px;
+        background-color: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0.9 white,
+                                                                  stop:0.5 gray,
+                                                                  stop:0.0 white);
+        border: 0;
+}
+
+/*Стиль виджета widget_system_buttons*/
+widget_system_buttons QPushButton#pushButton_close, widget_system_buttons QPushButton#pushButton_onwin, widget_system_buttons QPushButton#pushButton_minimize {
+    /*border: 1px solid #808080;*/
+    border-radius: 2px;
+    background-color: 0;
+    height: 30px;
+    width: 30px;
+}
+
+widget_system_buttons QPushButton#pushButton_close:hover, widget_system_buttons QPushButton#pushButton_onwin:hover, widget_system_buttons QPushButton#pushButton_minimize:hover {
+    border: 1px solid gray;
+    border-radius: 2px;
+}
+
+widget_system_buttons QPushButton#pushButton_close:pressed, widget_system_buttons QPushButton#pushButton_onwin:pressed, widget_system_buttons QPushButton#pushButton_minimize:pressed {
+    border: 1px solid blue;
+    border-radius: 2px;
+    	background-color: qlineargradient(x1:0, y1:1, x2:0, y2:0,
+								  stop:1 #C0C0C0,
+								  stop:0.4 #FFFFFF);
+}
+
+/*Лейблы заголовков*/
+
+QLabel#label_title {
+    border: 1px solid #808080;
+    border-radius: 4px;
+    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                                      stop:1 #FFFFFF,
+                                      stop:0 #C0C0C0);
+	font-size: 18px;
+	font-family: "Calibri";
+	width: 80px;
+}
+
+QLabel#label_title_dialog{
+    border: 1px solid #808080;
+    border-radius: 4px;
+    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                                  stop:1 #FFFFFF,
+                                  stop:0 #C0C0C0);
+	font-size: 14px;
+	font-family: "Calibri";
+	width: 40px;
+}
+
+QTreeWidget#treeWidget_project {
+	border-radius: 4px;
+	font-size: 12px;
+	font-family: "Courier New";
+	border: 1px solid gray;	
+}
